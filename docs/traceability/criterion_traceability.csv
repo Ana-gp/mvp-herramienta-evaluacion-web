@@ -1,0 +1,25 @@
+v1_criterion,capability_or_case,code_path,test_or_validation,evidence,result_or_state,release,status_note
+SEO-01,HTTP/access,src/app.py,G25-F5 /test.html,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,CORRECTO,v0.1.0-baseline,Historical validation; not a new run
+SEO-02,Redirect evaluator,src/app.py,G25-G22/G24 directed cases,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,DETECTADO/NO_EVALUABLE/EVIDENCIA_INSUFICIENTE,v0.1.0-baseline,Multiple cases; state depends on case
+SEO-03,HTTPS signal,src/app.py,G25-F5 /test.html,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,DETECTADO,v0.1.0-baseline,Local fixture uses HTTP
+SEO-04,robots,src/app.py,G25-F5 /test.html,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,CORRECTO,v0.1.0-baseline,Historical validation
+SEO-07,sitemap auxiliary,src/app.py,G25-F5 /test.html,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,CORRECTO,v0.1.0-baseline,Auxiliary criterion
+SEO-08,Internal links,src/app.py,G25-G22/G24 linkmix,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,DETECTADO,v0.1.0-baseline,404 observed; no-evaluable kept separate
+SEO-09,Dynamic content,src/app.py,G25-G22/G24 dynamic/domdiff,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,DETECTADO/EVIDENCIA_INSUFICIENTE,v0.1.0-baseline,Materiality rule preserved
+SEO-10,Robots/noindex,src/app.py,G25-F9-B1 /noindex,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,DETECTADO,v0.1.0-baseline,Historical validation
+SEO-12,Canonical,src/app.py,G25-F9-B1 /test.html,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,CORRECTO,v0.1.0-baseline,Historical validation
+SEO-14,Title,src/app.py,G25-F5 /test.html,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,CORRECTO,v0.1.0-baseline,Historical validation
+SEO-19,Language,src/app.py,G25-F5 /test.html,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,CORRECTO,v0.1.0-baseline,Historical validation
+SEO-20,Viewport,src/app.py,G25-F5 /test.html,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,CORRECTO,v0.1.0-baseline,Historical validation
+SEO-26,JSON-LD,src/app.py,G25-G22/G24 cases,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,CORRECTO/DETECTADO,v0.1.0-baseline,Valid and invalid cases
+SEO-27,JSON-LD,src/app.py,G25-F9-B1 /test.html,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,CORRECTO,v0.1.0-baseline,Historical validation
+ACC-04,Landmarks,src/app.py,G25-F9-B2 /test.html,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,CORRECTO,v0.1.0-baseline,Technical signal only
+ACC-05,Image alt,src/app.py,G25-F5 /test.html,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,CORRECTO,v0.1.0-baseline,Technical signal only
+ACC-06,Control labels,src/app.py,G25-F9-B2 /nolabel,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,PARCIAL,v0.1.0-baseline,Technical signal only
+ACC-08,Contrast,src/app.py,G25-G22/G24 cases,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,CORRECTO/PARCIAL,v0.1.0-baseline,Not WCAG conformance
+ACC-14,Keyboard/interaction,not implemented in baseline,G25-F9-B3A,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,NO IMPLEMENTADO,v0.1.0-baseline,Explicit F10 condition
+AI-04,Recoverable content,src/app.py,G25-F5 /test.html,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,CORRECTO,v0.1.0-baseline,Readiness signal only
+AI-07,Structured signals,src/app.py,G25-G22/G24 /test.html,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,PARCIAL,v0.1.0-baseline,No external entity validation
+AI-08,sameAs signal,src/app.py,G25 regression,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,PARCIAL,v0.1.0-baseline,Signal only
+AI-11,External links signal,src/app.py,G25 regression,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,PARCIAL,v0.1.0-baseline,No authority measurement
+AI-12,Authorship signal,src/app.py,G25 regression,evidence/historical/FASE_10_G25_Matriz_Completa_F5_F9.xlsx,PARCIAL,v0.1.0-baseline,Signal only

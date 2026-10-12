@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Fixture Web Audit PRO — target real</title>
+<meta name="description" content="Fixture controlada para validar navegación, DOM ejecutado y criterios seleccionados.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="http://127.0.0.1:8899/test.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Fixture Web Audit PRO"}</script>
+<style>
+  body { background:#fff; color:#111; }
+  a:focus,button:focus,input:focus { outline:3px solid #005fcc; outline-offset:2px; }
+</style>
+</head>
+<body>
+<main data-audit-target-marker="TARGET_DOCUMENT_MARKER">
+<h1>Fixture controlada de navegación target</h1>
+<p id="initial-content">HTML inicial reconocible.</p>
+<p>Esta página contiene señales para pruebas de ejecución JavaScript, contraste y navegación por teclado.</p>
+<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Imagen de prueba">
+<form>
+<label for="name">Nombre</label>
+<input id="name" name="name" type="text">
+<button type="button" id="action">Acción</button>
+</form>
+<nav aria-label="Navegación de prueba"><a href="#initial-content">Inicio</a></nav>
+<p id="contrast-sample">Texto de contraste evaluable.</p>
+<script>
+  document.getElementById('action').addEventListener('click', () => {
+    if (!document.getElementById('dynamic-marker')) {
+      const p=document.createElement('p'); p.id='dynamic-marker'; p.textContent='DYNAMIC_'+'TARGET_'+'MARKER';
+      document.querySelector('main').appendChild(p);
+    }
+  });
+  // Ejecutado automáticamente para que la diferencia HTML inicial/DOM sea observable.
+  const p=document.createElement('p'); p.id='dynamic-marker'; p.textContent='DYNAMIC_'+'TARGET_'+'MARKER';
+  document.querySelector('main').appendChild(p);
+</script>
+</main>
+</body>
+</html>
